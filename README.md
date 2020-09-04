@@ -1,3 +1,11 @@
-A git repository consisted of all Web Tech Assignments for the semester 20211 submitted by SID 18103098
+<h1 align="center">Java Assignments</h1>
 
-Each Assignment is a seperate folder - consisted within which is the code as well as the question it refers to in the comments at the very start.
+<div>
+  <h4> A git repository dedicated to the web technologies assignments for the session 20211 </h4>
+</div>
+
+<h5> Assignments done </h5>
+<ul>
+  <li> Assignment 1 </li>
+  <li> Assignment 2 </li>
+  </ul>
