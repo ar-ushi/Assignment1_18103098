@@ -4,25 +4,25 @@ public class ques6
    public static void main(String[] args){
       Scanner in = new Scanner(System.in);
       System.out.println("Input number of which you want the Hailstone sequence of");
-      int x =  in.nextInt();
+      int num =  in.nextInt();
       System.out.println("Hailstone sequence: " + x );
       int steps = 0;
-      if (x == 0){
+      if (num == 0){
           System.out.println(x);
         }
-      while (x!= 1 && x<Integer.MAX_VALUE){
-      if (x % 2 == 0){
-          x /= 2;
+      while (num != 1 && x<Integer.MAX_VALUE){
+      if (num % 2 == 0){
+          num /= 2;
         }else{
-            x = (3*x + 1);
+            num = (3*num + 1);
         }
-        System.out.println(x);
+        System.out.println(num);
          steps++;
     }
-    if (x==1){
+    if (num==1){
         System.out.println("No of steps: " + steps);
     }
-    else if(x == Integer.MAX_VALUE || x <0) {
+    else if(num == Integer.MAX_VALUE || num  <0) {
         System.out.println("Integer overflow");
     }
 }
