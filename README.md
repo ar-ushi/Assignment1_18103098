@@ -1,7 +1,7 @@
 <h1 align="center">Java Assignments</h1>
 
 <div>
-  <h4> A git repository dedicated to the web technologies assignments for the session 20211 </h4>
+  <h6> A git repository dedicated to the web technologies assignments for the session 20211 </h6>
 </div>
 
 <h5> Assignments done </h5>
