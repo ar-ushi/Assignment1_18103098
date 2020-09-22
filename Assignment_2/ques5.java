@@ -1,4 +1,4 @@
-package Assign_WT_1;
+
 
 import java.util.*;
 public class ques5

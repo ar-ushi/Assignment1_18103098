@@ -5,12 +5,12 @@ public class ques6
       Scanner in = new Scanner(System.in);
       System.out.println("Input number of which you want the Hailstone sequence of");
       int num =  in.nextInt();
-      System.out.println("Hailstone sequence: " + x );
+      System.out.println("Hailstone sequence: " + num );
       int steps = 0;
       if (num == 0){
-          System.out.println(x);
+          System.out.println(num);
         }
-      while (num != 1 && x<Integer.MAX_VALUE){
+      while (num != 1 && num <Integer.MAX_VALUE){
       if (num % 2 == 0){
           num /= 2;
         }else{
