@@ -26,6 +26,7 @@ public class focusedcrawl{
 	        Set<String> links = new HashSet<>(); //check if new url is the same as one in set so will be skipped else we go into a infinite loop
 	        Set<String> faculty = new HashSet<>();
 	        int count = 0;
+	        int depth = 1;
 	        //depth first search
 	        
 	        String seedUrl = "http://pec.ac.in";
@@ -40,8 +41,14 @@ public class focusedcrawl{
 	        		for (Element e : nextLink) {
 	        			String url = e.absUrl("href"); //absURL lets us get an entire url from an attribute
 		        		String etext = e.text(); 
-		        		if (!links.contains(url) && url.contains("https://pec.ac.in/")  && etext.length() >= 1){
-		        			if ((url.contains("/faculty/")) && !faculty.contains(url)){
+		        		if (etext.length() != 0) {
+		        			
+		        			if (!links.contains(url) && url.contains("https://pec.ac.in/")){
+		        				count++;
+		        				visited.add(url);
+		        				links.add(url);
+		        				
+		        			if ((url.contains("faculty")) && !faculty.contains(url)){
 		        				System.out.println(url);
 		        				String[] textData = {url};
 		        				//urlWriter.writeNext(textData);
@@ -53,6 +60,7 @@ public class focusedcrawl{
 		        		        
 		        		        count++;
 		        			}
+		        		}
 		        		}
 	        		}
 	        		
