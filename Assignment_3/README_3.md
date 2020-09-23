@@ -11,6 +11,19 @@
 </ul>
 </p>
 
+<h1>Assignment 3 Part 2 </h1>
+
+<p>  Contains:
+<ul>
+    <li>
+        One CSV files : FacUrl
+    </li>
+    <p>
+    Parse through seedUrl = faculty_index for university. Ignoring column codes - prints information for each faculty member on new row
+    </p>
+</ul>
+</p>
+
 
 <h1>Assignment 3 Part 3</h1>
 <p>
